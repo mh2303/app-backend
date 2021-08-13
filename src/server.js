@@ -2,7 +2,7 @@ import http from 'http'
 import { host, PORT } from './config.js'
 
 const server = http.createServer( (req, res) => {
-	res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4000')
+	res.setHeader('Access-Control-Allow-Origin', 'https://super-muper-client-app.herokuapp.com')
 	if(req.url === '/api/data' && req.method.toUpperCase() === 'GET') {
 		res.write(
 			JSON.stringify([
